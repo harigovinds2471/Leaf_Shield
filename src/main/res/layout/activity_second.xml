@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Second">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:text="Please Capture the affected leaf..."
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="207dp"
+        android:layout_height="215dp"
+        android:layout_below="@id/title"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="33dp"
+        app:srcCompat="@drawable/scan" />
+
+    <Button
+        android:id="@+id/selectBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="119dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:text="Gallery"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/captureBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="99dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:text="camera"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/predictBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/captureBtn"
+
+        android:layout_alignBottom="@+id/captureBtn"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="-4dp"
+        android:layout_marginBottom="-62dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:text="Predict"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="387dp"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="37dp"
+        android:gravity="center_horizontal"
+        android:text="final result"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>
